@@ -46,13 +46,11 @@ stop_instance() {
 	case "$type" in
 	  edge)
 	  config_get_bool enabled "$cfg" 'enabled' '0'
-        [ "$enabled" = "1" ] && offedge='killall -9 edge'
-		$offedge
+        [ "$enabled" = "1" ] && killall -9 edge
 		;;
 	  supernode)
 	  config_get_bool enabled "$cfg" 'enabled' '0'
-        [ "$enabled" = "1" ] && offsupernode='killall -9 supernode'
-		$offsupernode
+        [ "$enabled" = "1" ] && killall -9 supernode
 		;;
 	esac
 }
