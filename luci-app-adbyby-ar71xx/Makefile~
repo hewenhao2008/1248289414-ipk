@@ -8,7 +8,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI Support for adbyby-mtk7620
+LUCI_TITLE:=LuCI Support for adbyby-ar71xx
 LUCI_DEPENDS:=+libstdcpp +wget +kmod-nls-utf8
 LUCI_VERSION:=6.0
 

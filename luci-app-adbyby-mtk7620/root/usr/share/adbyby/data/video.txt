@@ -1,4 +1,4 @@
-!  -----更新时间:  2015-8-22 17:03:05   by:xwhyc-----------------------------------------------
+!  -----更新时间:  2015-9-1 22:28:15   by:xwhyc-----------------------------------------------
 !  -----广告反馈:http://bbs.kafan.cn/thread-1730471-1-1.html   QQ群: 79547134, 364066294--------------
 |http://www.remenxs.com/css/page.js$s@//ad*function rd_s(){@function rd_s(){@
 |http://www.remenxs.com/images/book.js$s@//MLAD*tanx_s,tanx_h.firstChild);</script>");@@
@@ -6,6 +6,9 @@
 ||7958.com.cn/download$s@onclick="javascript:showcode();@onclick="javascript:codefunc();@
 ||7958.com.cn/down_$s@var countTime = 10;@var countTime = 0;@
 |http://www.orsoon.com/js/tab.js$s@function soft_tonglan_bd(){*function azdown_bd(){@function azdown_bd(){@
+||www.94pan.com$s@<script src="http://js.csad.cc:99/page/*"></script>@@
+|http://forums.kali.org/$s@https://forums.kali.org@http://forums.kali.org@
+|http://www.bukade.com/tpl/2/loading.html$s@var loadTime=7000;@var loadTime=000;@
 
 
 
@@ -17,7 +20,6 @@
 |http://data.chiasenhac.com/banner
 |http://hentaiporno.xxx/images/banner
 |http://www.yeyou1.com/images/
-||sinaimg.cn/large/68299a77
 |http://*/paypic/
 ||f70123.com
 |http://*/js/cpv.js$script
@@ -45,12 +47,42 @@
 ||bestvogue.com/fans/
 |http://www.dy2018.com/dianyq/$script
 |http://www.xz7.com/js/$script
-|http://*/js/gg_$script
 |http://*.com/js/66060.gif$image
 ||e399.com
 |http://www.downkr.com/statics/js/all.js?v=
-
-
+|http://static.pay.baidu.com/resource/baichuan/s.js
+|http://www.right.com.cn/FORUM/static/image/common/logo.gif
+||bbuni.com
+||sqxst.com$third-party
+||cpmaf.com$third-party
+|http://adimg.
+||sellbuyads.cn$third-party
+|http://*.com/?aff=
+|http://m.17173.com/resource/image/m/down17173app.png$image
+|http://*.com/hehe/$script
+|http://*.info/ad_
+||admin6.com$third-party
+|http://mystatic.le4le.com/pt/ad/$script
+||52kmk.com
+||123cha.com/2568$image
+||52kmh.com
+|http://www.jiaosm.net/cdn-cgi/pe/bag2?r
+|http://cn-style.gcimg.net/v6/gold/images/*.gif
+|http://v2.tjj.com/click.php
+b2b.hc360.com##div#cu_channel,div#leftsuspend,div[class^="line"],div.wechactLi
+huangye88.com##[id^="o"]
+m.gongchang.com###app-download-link,div.advise-pic
+m.hc360.com##div#globalCgtTop
+yoursupin.com##div[class^="zzs"]
+v.baidu.com##div[class^="video-push"],[class^="ad"]
+|http://cn-style.gcimg.net/v6/gold/images/*.gif
+|http://v2.tjj.com/click.php
+b2b.hc360.com##div#cu_channel,div#leftsuspend,div[class^="line"],div.wechactLi
+huangye88.com##[id^="o"]
+m.gongchang.com###app-download-link,div.advise-pic
+m.hc360.com##div#globalCgtTop
+yoursupin.com##div[class^="zzs"]
+v.baidu.com##div[class^="video-push"],[class^="ad"]
 
 
 
@@ -94,8 +126,29 @@ www.downcc.com##.mg-t5
 duoduopan.com##div.a_mu,div.a_pt,div.a_pb,div.GzList
 www.shaoit.com##div[class^="forum-201"]
 8591.com.tw##div#top-ad,div#active_banner,div[class^="act"]
-
-
-
-
-
+chcj.net##div.a_fl,div.itemFloat,div.rightDiv
+ofweek.com##div#wearBanner,div.ad240,div.ad250,div.ad300,div[class^="ad728"]
+bbs.wlxww.com##div#framesJFWGF,div#frameF9V2pz
+www.1kkk.com##div#adjs_id,div.clDiv
+zhenhaoba.com##center,div.a_pt,div.a_pb
+zhenhaosq.com##center,div.a_pt,div.a_pb,div.t_f
+xinhuanet.com##div.topadzt,div.rightad2,div.footad
+cq.house.163.com##div.area,A[href="http://m.jiu.163.com/"],SPAN[class="blank9"]
+hao123.com##div.column-mask-model,div.column-content,div.treasure-game
+iidvd.com##[href^="http://www.jxf0055.com/"]
+www.javbus.co##div[class^="banner-"]
+x4p.co##iframe[SRC^="http://fans.bestvogue.com/fans/"]
+v6p.co##iframe[SRC^="http://fans.bestvogue.com/fans/"]
+v4p.co##iframe[SRC^="http://fans.bestvogue.com/fans/"]
+ku6.com##div[id^="hzp1"],div.bottom-ad,div#hzi03
+forums.kali.org##ins.adsbygoogle
+btkitty.la##a[href="http://btkitty.la/gogo.php"]
+www.zdfans.com##a[href^="http://js.50bang.org/?formType="]
+ifeng.com##div[class^="ad_"],div[class^="adv"],div.ad2,span#StreamMediaWrap
+www.jiaosm.net##div#weizhi-a,div.viewt_cc,div#xinxi
+b2b.hc360.com##div#cu_channel,div#leftsuspend,div[class^="line"],div.wechactLi
+huangye88.com##[id^="o"]
+m.gongchang.com###app-download-link,div.advise-pic
+m.hc360.com##div#globalCgtTop
+yoursupin.com##div[class^="zzs"]
+v.baidu.com##div[class^="video-push"],[class^="ad"]
