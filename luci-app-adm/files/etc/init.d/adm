@@ -1,0 +1,68 @@
+#!/bin/sh /etc/rc.common
+#by 1248289414
+START=99
+STOP=10
+USE_PROCD=1
+
+adm_check_enabled() {
+	config_get_bool enabled $1 enabled 0
+	[ $enabled -eq 0 ] && exit 0
+}
+rule_add_before(){
+	cat /usr/share/adm/cache/user.txt > /usr/share/adm/user.txt
+}	
+rule_add() {
+	local address
+	config_get address $1 address
+	[ -n "$address" ] && wget -O- $address >> /usr/share/adm/user.txt --quiet --timeout=10 --no-check-certificate
+}
+eidt_config() {
+	local rule_new err_log proxy type pip pport autoproxy aptype apip apport
+	config_get rule_new $1 rule_new 1
+	config_get err_log $1 err_log 0
+	config_get proxy $1 proxy 0
+	config_get type $1 type 5
+	config_get pip $1 pip 127.0.0.1
+	config_get pport $1 pport 66509
+	config_get autoproxy $1 autoproxy 0
+	config_get aptype $1 aptype 5
+	config_get apip $1 apip 127.0.0.1
+	config_get apport $1 apport 65509
+	
+	echo -e "[user]\nbind_local_port=18308\nbind_lan_port=18309" > /usr/share/adm/ADMConfig.ini
+	echo "rule_new=$rule_new" >> /usr/share/adm/ADMConfig.ini
+	echo "err_log=$err_log" >> /usr/share/adm/ADMConfig.ini
+	echo "[proxy]" >> /usr/share/adm/ADMConfig.ini
+	echo "enable=$proxy" >> /usr/share/adm/ADMConfig.ini
+	echo "proxy_type=$type" >> /usr/share/adm/ADMConfig.ini
+	echo "proxy_ip=$pip" >> /usr/share/adm/ADMConfig.ini
+	echo "proxy_port=$pport" >> /usr/share/adm/ADMConfig.ini
+	echo "[auto_proxy]" >> /usr/share/adm/ADMConfig.ini
+	echo "enable=$autoproxy" >> /usr/share/adm/ADMConfig.ini
+	echo "proxy_type=$aptype" >> /usr/share/adm/ADMConfig.ini
+	echo "proxy_port=$apport" >> /usr/share/adm/ADMConfig.ini
+	echo "proxy_ip=$apip" >> /usr/share/adm/ADMConfig.ini
+}
+start_service() {
+	config_load adm
+	config_foreach adm_check_enabled adm
+	config_foreach eidt_config adm
+	config_foreach rule_add_before adm
+	config_foreach rule_add extrule
+	
+	procd_open_instance
+	procd_set_param command /usr/share/adm/adm
+	procd_set_param respawn
+	procd_set_param limits cpu=43200
+	procd_close_instance
+	
+	iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 18309
+}
+
+stop_service() {
+	iptables -t nat -D PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 18309
+}
+
+reload_service() {
+	restart
+}

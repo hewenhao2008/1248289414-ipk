@@ -1,0 +1,4 @@
+
+config adm
+	option rule_new '1'
+
